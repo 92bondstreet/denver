@@ -1,5 +1,4 @@
 {
-  "parser": "babel-eslint",
   "env": {
     "browser": true,
     "node": true
@@ -82,10 +81,10 @@
     "no-var": 2,
 
     // require method and property shorthand syntax for object literals (off by default)
-    "object-shorthand": [2, "never"],
+    "object-shorthand": [2, "always"],
 
     // controls location of Use Strict Directives
-    "strict": [2, "global"],
+    "strict": [2, "never"],
 
     // disallow or enforce trailing commas
     "comma-dangle": [2, "never"],
@@ -451,7 +450,7 @@
     "no-trailing-spaces": 2,
 
     // disallow dangling underscores in identifiers
-    "no-underscore-dangle": 2,
+    "no-underscore-dangle": 0,
 
     // disallow the use of Boolean literals in conditional expressions (off by default)
     "no-unneeded-ternary": 2,

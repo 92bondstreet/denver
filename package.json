@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "The release helper",
   "readme": "README.md",
-  "main": "index.js",
+  "bin": {
+    "denver": "cli.js"
+  },
   "engines": {
     "node": ">=6"
   },
@@ -19,13 +21,24 @@
     "type": "git",
     "url": "https://github.com/92bondstreet/denver.git"
   },
+  "keywords": [
+    "release",
+    "lux",
+    "shrinkwrap"
+  ],
   "devDependencies": {
     "ava": "^0.14.0",
-    "babel-eslint": "^6.0.4",
     "coveralls": "^2.11.9",
     "nyc": "^6.4.4",
     "opn-cli": "^3.1.0",
     "tap-diff": "^0.1.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "boxen": "^0.5.1",
+    "chalk": "^1.1.3",
+    "get-pkg-repo": "^1.2.1",
+    "package-json": "^2.3.2",
+    "winston": "^2.2.0",
+    "yargs": "^4.7.0"
+  }
 }

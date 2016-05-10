@@ -16,6 +16,12 @@ Denver, the release helper, helps package maintainers to be a better release man
 * Highlight commits history between versions of package dependencies and HEAD
 * Lock dependencies with a better shrinkwrap workflow
 
+## Prerequisites
+
+```sh
+❯ npm i -g ncu
+```
+
 ## Usage
 
 ```sh
