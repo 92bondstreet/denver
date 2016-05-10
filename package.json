@@ -1,0 +1,31 @@
+{
+  "name": "denver",
+  "version": "0.0.1",
+  "description": "The release helper",
+  "readme": "README.md",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test-only": "ava --tap | tap-diff",
+    "test": "./node_modules/.bin/nyc --check-coverage --lines 80 --functions 80 --branches 80 npm run test-only; ./node_modules/.bin/nyc report --reporter=html",
+    "coverage": "./node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls",
+    "open": "./node_modules/.bin/opn ./coverage/index.html"
+  },
+  "author": "Yassine AZZOUT <yassine.azzout@gmail.com>",
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/92bondstreet/denver.git"
+  },
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "babel-eslint": "^6.0.4",
+    "coveralls": "^2.11.9",
+    "nyc": "^6.4.4",
+    "opn-cli": "^3.1.0",
+    "tap-diff": "^0.1.1"
+  },
+  "dependencies": {}
+}
