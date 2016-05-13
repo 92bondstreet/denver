@@ -31,6 +31,7 @@ Denver, the release helper, helps package maintainers to be a better release man
 ```sh
 # highlight dependencies
 ❯ denver lux
+❯ denver lux --no-history
 # lock dependencies
 ❯ denver shrinkwrap
 ```
